@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A little joy for your shelf. Explore collectible die-cast cars, Hot Wheels finds, and automotive art at Snapset.Store.">
+  <title>Snapset.Store — Collect the feeling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One+SC&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span>Free shipping on orders over $75</span><span class="announcement-dot" aria-hidden="true">✳</span><span>Made for the love of the drive</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Snapset.Store home"><img src="assets/logo.png" alt=""><span class="brand-name">Snapset.Store</span></a>
+    <button class="mobile-menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#collection" data-nav-category="Hot Wheels">Cars</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" type="button" aria-label="Focus product search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button class="cart-trigger" type="button" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span>Bag</span><span class="cart-count" aria-live="polite">0</span></button>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero home-hero" aria-label="Snapset.Store collector car collection">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✳</span> SMALL CARS. BIG FEELINGS.</div>
+        <h1>Your dream<br>garage,<br><span class="hero-crazy">made tiny.</span></h1>
+        <p>A whole lot of road-trip joy, all in miniature. Meet Hot Wheels favorites made for your collection.</p>
+        <a class="button button-hero" href="#collection">Find your favorite <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><div class="avatar-stack" aria-hidden="true"><span>S</span><span>H</span><span>W</span></div><span>Little finds, big collector joy</span><span class="rating" aria-label="Five stars">★★★★★</span></div>
+      </div>
+      <div class="hero-art home-hero-art" id="showroom-stage" aria-label="Featured miniature car carousel">
+        <div class="hero-card-stack">
+          <button class="showcase-card showcase-card-left" type="button" data-detail="hw-gma-t33" aria-label="View featured car"><img id="showcase-previous" src="assets/hotwheels-gma-t33-v2.png" alt="Green Gordon Murray Automotive T.33 Hot Wheels miniature in blister packaging"></button>
+          <button class="showcase-card showcase-card-main" type="button" data-detail="hw-ultra-hots-pontiac" aria-label="View featured car"><img class="showcase-main-image" id="showcase-image" src="assets/hotwheels-bugatti-bolide.png" alt="Black Bugatti Bolide Hot Wheels miniature sealed in EuroSpeed Premium blister packaging"><span class="hero-card-caption"><strong id="showcase-card-title">Bugatti Bolide</strong><small id="showcase-card-series">EUROSPEED · PREMIUM</small></span></button>
+          <button class="showcase-card showcase-card-right" type="button" data-detail="hw-dodge-viper" aria-label="View featured car"><img id="showcase-next-image" src="assets/hotwheels-legends-green.png" alt="Green Mazda MX-5 Miata Hot Wheels miniature sealed in its 2025 Legends Tour blister card"></button>
+        </div>
+        <div class="hero-sticker"><span>SMALL<br>CAR<br>ENERGY</span><b aria-hidden="true">✳</b></div>
+        <div class="hero-floating-note"><span class="floating-note-mark" aria-hidden="true">✳</span><span><strong>Collector’s corner</strong><small>Seven pocket-sized favorites</small></span><span class="floating-note-arrow" aria-hidden="true">↗</span></div>
+        <div class="showcase-controls"><button class="showroom-previous" type="button" aria-label="Previous Hot Wheels product">‹</button><div class="showcase-indicators" id="showcase-indicators" role="group" aria-label="Choose a Hot Wheels product"></div><button class="showroom-next" type="button" aria-label="Next Hot Wheels product">›</button></div>
+      </div>
+    </section>
+    <section class="value-strip" aria-label="Store highlights"><div><span>✳</span> Curated for collectors</div><div><span>↗</span> Carefully packed, always</div><div><span>♡</span> Little things, big joy</div></section>
+    <section class="collection section-wrap" id="collection" aria-labelledby="collection-heading">
+      <div class="section-heading"><div><div class="eyebrow">THE GOOD STUFF</div><h2 id="collection-heading">Find your next <em>favorite.</em></h2></div><a class="text-link desktop-link" href="#collection" data-show-all>View all products <span>↗</span></a></div>
+      <div class="shop-controls"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="product-search" type="search" placeholder="Find your favorite..." autocomplete="off" aria-label="Search products"></label><div class="filter-list" role="group" aria-label="Filter products by category"><button class="filter-chip is-active" type="button" data-filter="All">Everything <span class="filter-number"></span></button><button class="filter-chip" type="button" data-filter="Hot Wheels">Hot Wheels</button></div></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>✳</span><h3>No little treasures found.</h3><p>Try a different search or browse everything.</p><button class="button button-light" type="button" data-show-all>Show all products</button></div>
+      <p class="sample-note">Sample prices shown in INR for demonstration.</p>
+    </section>
+    <section class="editorial section-wrap" aria-label="Collector's note"><div class="editorial-image"><img src="assets/hotwheels-96-viper-gts.png" alt="Packaged Hot Wheels '96 Dodge Viper miniature" loading="lazy"></div><div class="editorial-copy"><span class="eyebrow">A NOTE FROM THE GARAGE</span><h2>It’s never just<br>a little car.</h2><p>It’s that first blister pack on your shelf. The tiny racer that made a big day. A whole garage, one pocket-sized find at a time.</p><a href="#collection" class="text-link">Find your kind of magic <span>↗</span></a><span class="editorial-sparkle" aria-hidden="true">✳</span></div></section>
+    <section class="newsletter section-wrap" id="contact"><div><span class="eyebrow">A LITTLE POSTCARD FROM US</span><h2>Good things are<br>in the <em>works.</em></h2><p>New finds, collector stories, and a little joy for your inbox.</p></div><form class="newsletter-form"><label class="sr-only" for="email">Your email address</label><input id="email" type="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Count me in <span>↗</span></button><p class="form-feedback" aria-live="polite">No spam. Just the good stuff.</p></form><div class="newsletter-star" aria-hidden="true">✳</div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#home" aria-label="Snapset.Store home"><img src="assets/logo.png" alt=""><span class="brand-name">Snapset.Store</span></a><p>Little treasures for the<br>love of the road.</p><div class="footer-links"><div><span class="footer-label">TAKE A LOOK</span><a href="#home">Home</a><a href="#collection" data-nav-category="Hot Wheels">Cars</a></div><div><span class="footer-label">SAY HELLO</span><a href="mailto:hello@snapset.store">Email us</a><a href="https://www.instagram.com/">Instagram ↗</a><a href="https://www.tiktok.com/">TikTok ↗</a></div><div><span class="footer-label">THE FINE PRINT</span><span>Independent collector shop</span><span>Not affiliated with Mattel or Hot Wheels.</span></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Snapset.Store. Made for the love of cars.</span><a href="#home">Back to top ↑</a></div></footer>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-heading" aria-modal="true" role="dialog" aria-hidden="true"><div class="drawer-header"><div><span class="eyebrow">YOUR LITTLE TREASURES</span><h2 id="cart-heading">Your bag <span class="drawer-count">(0)</span></h2></div><button class="icon-button close-cart" type="button" aria-label="Close shopping bag">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><h3>Your bag is taking a little drive.</h3><p>Find something you love and bring it along.</p><button class="button button-dark continue-shopping" type="button">Keep browsing</button></div><div class="cart-summary" id="cart-summary"><div class="subtotal"><span>Sample subtotal</span><strong id="cart-subtotal">₹0</strong></div><p>Shipping calculated at checkout.</p><button class="button button-dark checkout-button" type="button">Continue to checkout <span>↗</span></button><span class="checkout-note">Sample prices shown for demonstration. Checkout is a demo.</span></div></aside>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="detail-name"><button class="icon-button detail-close" type="button" aria-label="Close product details">×</button><div class="detail-content"></div></dialog>
+</body>
+</html>
